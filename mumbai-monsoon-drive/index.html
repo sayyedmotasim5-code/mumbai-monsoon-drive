@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MUMBAI MONSOON DRIVE - a stylized 3D driving game inspired by Mumbai roads and monsoon weather." />
+    <title>MUMBAI MONSOON DRIVE</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="menu" class="overlay">
+      <h1>MUMBAI MONSOON DRIVE</h1>
+
+      <div class="weather-section">
+        <label>Weather</label>
+        <div class="weather-buttons">
+          <button id="weather-sunny" class="weather-btn active">Sunny</button>
+          <button id="weather-rainy" class="weather-btn">Rainy</button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="start-btn" class="main-btn">Start Game</button>
+      </div>
+
+      <p class="hint">
+        Controls: W / A / S / D or Arrow Keys. On mobile, use the touch controls.
+      </p>
+    </div>
+
+    <div id="hud">
+      <div id="speed">Speed: 0 km/h</div>
+      <div id="weather">Weather: Sunny</div>
+    </div>
+
+    <div id="mobile-controls" class="mobile-controls">
+      <button id="accel" class="touch-button">▲</button>
+      <div class="touch-row">
+        <button id="left" class="touch-button">◀</button>
+        <button id="brake" class="touch-button">▼</button>
+        <button id="right" class="touch-button">▶</button>
+      </div>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
